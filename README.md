@@ -19,9 +19,5 @@ HTML5, CSS3, JavaScript, jQuery, Bootstrap
 ## Contribution
 80% — UI/UX Design, Frontend Development, QA & Debugging
 
-## Links
-- [View Live Project](https://your-deployed-link.com)
-- [View Portfolio](https://hyeminc0706.github.io/Portfolio_1214_original/)
-
 ## Initial Work
   https://www.ktcu.or.kr/index
