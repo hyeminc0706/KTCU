@@ -1,21 +1,13 @@
-
----
-
-## 📄 Project3: KTCU Clone
-
-```markdown
 # KTCU Clone Project
 
 ## Overview
 A desktop-only clone of the Korea Teachers' Credit Union website.  
 Focused on understanding structure and layout rather than replicating full functionality.
 
+
 ## Screenshots
 ### Desktop View
 ![Desktop Screenshot](https://github.com/user-attachments/assets/76cc095a-5bee-4deb-b4d8-d1390b5ef0cf)
-
-### Mobile View
-(coming soon)
 
 ## Demo
 - [Live Demo](https://hyeminc0706.github.io/Clone_Project/)
