@@ -1,75 +1,43 @@
-Korea Teachers' Credit Union (Clone Project)
-🔍 Overview
-A fully responsive clone of the Korea Teachers' Credit Union website, built to practice real-world UI/UX patterns, component behavior, and frontend architecture.
-This project demonstrates my ability to reverse‑engineer complex layouts, translate design systems into code, and build accessible, responsive interfaces optimized for modern browsers.
 
-🖼️ Screenshots
-Desktop View
-<img width="1402" height="926" alt="Screenshot 2025-12-24 at 2 33 14 AM" src="https://github.com/user-attachments/assets/76cc095a-5bee-4deb-b4d8-d1390b5ef0cf" />
+---
 
-Mobile View
-(will be uploaded soon)
+## 📄 Project3: KTCU Clone
 
-▶︎ Live Demo: https://hyeminc0706.github.io/Clone_Project/
-▶︎ Original Site: https://www.ktcu.or.kr/index
+```markdown
+# KTCU Clone Project
 
-🎯 Role
-UI/UX Designer & Frontend Developer  
-Owned the full design-to-development pipeline, including research, wireframing, prototyping, implementation, and QA.
+## Overview
+A desktop-only clone of the Korea Teachers' Credit Union website.  
+Focused on understanding structure and layout rather than replicating full functionality.
 
-🛠️ Tech Stack
-HTML5 — Semantic structure and component hierarchy
+## Screenshots
+### Desktop View
+![Desktop Screenshot](https://github.com/user-attachments/assets/76cc095a-5bee-4deb-b4d8-d1390b5ef0cf)
 
-CSS3 — Layout, styling, responsive design, animations
+### Mobile View
+(coming soon)
 
-JavaScript / jQuery — Interactive UI components and DOM behavior
+## Demo
+- [Live Demo](https://hyeminc0706.github.io/Clone_Project/)
+- [Original Site](https://www.ktcu.or.kr/index)
 
-Bootstrap — Grid system and reusable UI patterns
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- Bootstrap
 
-🧩 Process
-1. Research & Planning
-Analyzed the original website’s information architecture, navigation flow, and UI patterns
+## Features
+- Layout built with HTML/CSS and Bootstrap
+- Interactive elements with jQuery
+- Practice project for UI/UX and frontend development
 
-Identified key components to replicate (hero banners, tab menus, sliders, card layouts, etc.)
+## Contribution
+UI/UX design and frontend development (100%)
 
-2. Wireframing & UI Design
-Created low‑fidelity wireframes to map layout structure
-
-Designed high‑fidelity mockups focusing on clarity, hierarchy, and consistency
-
-3. Frontend Implementation
-Built the full layout using semantic HTML and modular CSS
-
-Recreated interactive behaviors using JavaScript/jQuery
-
-Applied Bootstrap for responsive grid alignment and component spacing
-
-4. Responsive Optimization
-Ensured seamless behavior across desktop, tablet, and mobile
-
-Adjusted typography, spacing, and component scaling for readability
-
-5. QA & Debugging
-Conducted cross‑browser testing (Chrome, Safari, Firefox)
-
-Fixed layout shifts, event handling issues, and mobile viewport bugs
-
-📌 Contribution
-80% Ownership
-
-UI/UX Design
-
-Frontend Development
-
-Interaction Design
-
-QA & Debugging
-
-🎯 Key Outcomes
-Successfully replicated a real-world financial website’s structure and interaction patterns
-
-Strengthened ability to translate design systems into clean, maintainable code
-
-Improved responsive design workflow and debugging efficiency
-
-Built a reusable component approach applicable to future projects
+## Installation
+```bash
+git clone https://github.com/hyeminc0706/Clone_Project.git
+cd Clone_Project
+open index.html
