@@ -35,34 +35,6 @@ The goal was to analyze and recreate a real-world layout to better understand st
 - GitHub Repo: [[link]  ](https://github.com/hyeminc0706/Clone_Project)
 - Case Study: [[link]](https://little-gauge-2b1.notion.site/KTCU-Clone-Layout-Structure-Study-2d82c743869e80038e3ccc11730ebbab?pvs=73)
 
-# KTCU Clone Project
-
-## Overview
-A desktop-only clone of the Korea Teachers' Credit Union website.  
-Focused on understanding structure and layout rather than replicating full functionality.
-
-
-## Screenshots
-### Desktop View
-
-## Demo
-
-
-## Tech Stack
-- HTML5
-- CSS3
-- JavaScript
-- jQuery
-- Bootstrap
-
-## Features
-- Layout built with HTML/CSS and Bootstrap
-- Interactive elements with jQuery
-- Practice project for UI/UX and frontend development
-
-## Contribution
-UI/UX design and frontend development (100%)
-
 ## Installation
 ```bash
 git clone https://github.com/hyeminc0706/Clone_Project.git
