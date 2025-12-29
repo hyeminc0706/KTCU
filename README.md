@@ -35,6 +35,7 @@ The goal was to analyze and recreate a real-world layout to better understand st
 - Conducted testing and refinement
 <figure> 
   <img src="https://github.com/user-attachments/assets/ec5c5c58-3704-4a14-abd5-3d245e2f4bec" width="600" alt="Wireframing_CloneProject">        
+  
   <figcaption>Wireframe sketch showing layout structure and spacing logic.</figcaption> 
 </figure>
 
