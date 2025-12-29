@@ -33,11 +33,10 @@ The goal was to analyze and recreate a real-world layout to better understand st
 - Built desktop layout with HTML/CSS  
 - Added interactive elements with JavaScript/jQuery  
 - Conducted testing and refinement
-![와이어프레임_최혜민_041624](https://github.com/user-attachments/assets/d6608d20-59ed-417f-b2fe-596d3de20f40)
-![Wireframe sketch showing layout structure and spacing logic](![와이어프레임_최혜민_041624](https://github.com/user-attachments/assets/77d4ac18-d6d8-4152-becc-4d3f74f59dd4)
-
-*Wireframe sketch showing layout structure and spacing logic.*
-
+<figure>
+  <img src="./assets/wireframe.png" width="600" alt="Wireframe sketch showing layout structure and spacing logic">
+  <figcaption>Wireframe sketch showing layout structure and spacing logic.</figcaption>
+</figure>
 
 ---
 
