@@ -576,9 +576,7 @@ section#story div.wrap a p {
 }
 
 /* 서비스 */
-section#service {
-padding: 96px 0 0;
-}
+section#service {padding: 96px 0 0;margin-left: -16px;}
 section#service div.wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -669,7 +667,7 @@ section#news {
 section#news div {
   max-width: 896px;
   padding: 72px 0 48px 0;
-  margin-left: 361px;
+  margin-left: 255px;
 } 
 section#news div h2 {
   word-spacing: 7px;
