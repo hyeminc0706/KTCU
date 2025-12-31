@@ -78,29 +78,8 @@
             color: #21409a;
         }
     </style>
-    <script>
-        $(document).ready(function(){
-            $(".btn-view span:nth-of-type(1)").addClass('txt');
-            $(".btn-view span:nth-of-type(2)").addClass("arrow");
-            $(".btn-view span:nth-of-type(3)").addClass("circle");	
-        });
-        $(document).ready(function(){
-            $(".btn-view").hover(
-                function(){
-                    $(".txt").removeClass('txt').addClass("mtxt");
-                    $(".arrow").removeClass('arrow').addClass("marrow");
-                    $(".circle").removeClass('circle').addClass("mcircle");
-                }
-            );	
-            $(".btn-view").mouseleave(
-                function(){
-                    $(".mtxt").removeClass('mtxt').addClass("txt");
-                    $(".marrow").removeClass('marrow').addClass("arrow");
-                    $(".mcircle").removeClass('mcircle').addClass("circle");
-                }
-            );		
-        });
-    </script>
+ 
+
     <script>
         $(document).ready(function(){
             $('.titleAni').slick({
@@ -111,7 +90,7 @@
                 dots: false,
                 infinite: true,
                 speed: 1500,
-                arrows: false,
+                arrows: true,
                 fade: true
             });
 
@@ -132,50 +111,50 @@
             $("#title  .slick-next,.btn_pause").wrapAll("<div class='wnext'></div>"); 
 
             
-            // 슬릭 진행바 연습
-            var $slider = jQuery(".titleAni");
+            // // 슬릭 진행바 연습
+            // var $slider = jQuery(".titleAni");
 
-            if ($slider.length) {
-                let currentSlide;
-                let slidesCount;
-                let sliderCounter = document.createElement("div");
+            // if ($slider.length) {
+            //     let currentSlide;
+            //     let slidesCount;
+            //     let sliderCounter = document.createElement("div");
 
-                function progress(sliders) {
-                    sliders.each(function () {
-                        var slider = jQuery(this);
-                        var $progressBar = slider
-                            .parentsUntil(".variable_slider_row")
-                            .find(".progress");
+            //     function progress(sliders) {
+            //         sliders.each(function () {
+            //             var slider = jQuery(this);
+            //             var $progressBar = slider
+            //                 .parentsUntil(".variable_slider_row")
+            //                 .find(".progress");
 
-                        slider.on(
-                            "beforeChange",
-                            function (event, slick, currentSlide, nextSlide) {
-                                var calc = ((nextSlide + 1) / slick.slideCount) * 100;
-                                $progressBar.css("background-size", calc + "% 100%");
-                            }
-                        );
-                    });
-                }
+            //             slider.on(
+            //                 "beforeChange",
+            //                 function (event, slick, currentSlide, nextSlide) {
+            //                     var calc = ((nextSlide + 1) / slick.slideCount) * 100;
+            //                     $progressBar.css("background-size", calc + "% 100%");
+            //                 }
+            //             );
+            //         });
+            //     }
 
-                progress($slider);
-            }
+            //     progress($slider);
+            // }
 
 
-            // 슬라이드후 추가 애니를 위한 클래스지정
-            $('.titleAni').on('afterChange', function(event, slick, currentSlide){
-                // 모든 슬라이드에서 커스텀 클래스를 제거
-                $('.slick-slide h2').removeClass('h2up');
-                $('.slick-slide p').removeClass('h2up');
-                $('.slick-slide ul').removeClass('h2up');
+            // // 슬라이드후 추가 애니를 위한 클래스지정
+            // $('.titleAni').on('afterChange', function(event, slick, currentSlide){
+            //     // 모든 슬라이드에서 커스텀 클래스를 제거
+            //     $('.slick-slide h2').removeClass('h2up');
+            //     $('.slick-slide p').removeClass('h2up');
+            //     $('.slick-slide ul').removeClass('h2up');
                 
-                // 현재 슬라이드에 커스텀 클래스 추가
-                $('.slick-current h2').addClass('h2up');
-                $('.slick-current p').addClass('h2up');
-                $('.slick-current ul').addClass('h2up');
-            });
+            //     // 현재 슬라이드에 커스텀 클래스 추가
+            //     $('.slick-current h2').addClass('h2up');
+            //     $('.slick-current p').addClass('h2up');
+            //     $('.slick-current ul').addClass('h2up');
+            // });
 
-            // 초기 로드시 현재 슬라이드에 커스텀 클래스 추가
-            $('.slick-current h2,.slick-current p,.slick-current ul').addClass('h2up');
+            // // 초기 로드시 현재 슬라이드에 커스텀 클래스 추가
+            // $('.slick-current h2,.slick-current p,.slick-current ul').addClass('h2up');
 
             // // 하나의 버튼으로 두개의 slick연동하기
             // $('.serviceAni').slick({
@@ -205,10 +184,10 @@
             //     asNavFor: '.serviceAni'
             // });
             // 버튼 클릭 이벤트로 두 슬라이더 동기화
-            $('.serviceAni2 .slick-next').on('click', function() {
-                $('.serviceAni').slick('slickNext');
-                $('.serviceAni2').slick('slickNext');
-            });
+            // $('.serviceAni2 .slick-next').on('click', function() {
+            //     $('.serviceAni').slick('slickNext');
+            //     $('.serviceAni2').slick('slickNext');
+            // });
 
             // //타이틀 도트대신 1/3식으로 표시하기  -----------------------------------------------------------
             // let num = $("#title .slick-dots article").length; // 요소의 총갯수 가져옴
@@ -229,21 +208,21 @@
             // });  
         
 
-            //슬라이드 카운트 연습
-            var $status = $('.pagingInfo');
-            var $total = $('.total');
-            var $slickElement = $('.titleAni');
+            // //슬라이드 카운트 연습
+            // var $status = $('.pagingInfo');
+            // var $total = $('.total');
+            // var $slickElement = $('.titleAni');
 
-            $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-            var i = (currentSlide ? currentSlide : 0) + 1;
-            $status.text(i + ' / ');
-            });
+            // $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+            // //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+            // var i = (currentSlide ? currentSlide : 0) + 1;
+            // $status.text(i + ' / ');
+            // });
 
-            $slickElement.slick({
-            autoplay: true,
-            dots: true
-            });
+            // $slickElement.slick({
+            // autoplay: true,
+            // dots: true
+            // });
         });
 
         $(function(){
@@ -263,7 +242,8 @@
 				//스크롤시 상단메뉴고정
 				wc=$(window).scrollTop();
 				if(wc > headerT){
-					$("#header").addClass("fixed");
+					$("#header").addClass("hide");
+                    $("#sub-header").removeClass("hide");
                     $("aside").addClass("asfixed");
 					$("body").css("padding-top",bodyPaddingB);
 				}
@@ -272,10 +252,17 @@
                     $("aside").addClass("asasfixed");
 					$("body").css("padding-top",bodyPaddingB);
 				}
+
                 //위로 스크롤시 상단메뉴 원래로 위치
-				if(wc < headerH){
-					$("#header").removeClass("fixed");
+                 if(wc < serviceT){
                     $("aside").removeClass("asasfixed");
+                    $("aside").addClass("asfixed");
+					$("body").css("padding-top",bodyPaddingB);
+				}
+				if(wc < headerH){
+					$("#sub-header").addClass("hide");
+					$("#header").removeClass("hide");
+                    $("aside").removeClass("asfixed");
 					$("body").css("padding-top",bodyPadding);
 				}
 			});
@@ -318,6 +305,21 @@
             <button>팝업 열기</button>
         </span>
     </div>
+    <!--sub-header-->
+    <div id="sub-header" class="wrap hide">
+        <h1><a href="">The-K한국교직원공제회</a></h1>
+        <ul class="mainmenu">
+            <li><a href="">마이페이지</a></li>
+            <li><a href="">금융상품</a></li>
+            <li><a href="">이벤트·복지</a></li>
+            <li><a href="">고객센터</a></li>
+            <li><a href="">인증센터</a></li>
+        </ul>
+        <span class="rightmenu">
+            <button>검색</button>
+            <button>팝업 열기</button>
+        </span>
+    </div>
     <!-- 타이틀영역 -->
     <div id="wtitle" class="wrap paddingT50 paddingB50">
         <!-- 타이틀 영역 -->
@@ -330,7 +332,7 @@
                     <li>응모기간 : 2024. 04. 12.(금) ~ 2024. 04. 22.(월)</li>
                     <li>당첨발표 : 2024. 04. 26.(금)</li>
                 </ul>
-                <img src="img/book.png" alt="">
+                <img src="img/book.png" alt="" width="360px" height="360px">
             </article>
             <article class="title2">
                 <h2 class="h1 bold">2024년 제1차 북&JOY 도서증정 행사</h2>
@@ -358,9 +360,9 @@
             </article>
         </div>
         <button class="btn-view">
-            <span class="">자세히 보기</span>
-            <span class=""></span>
-            <span class=""></span>
+            <span class="txt">자세히 보기</span>
+            <span class="arrow"></span>
+            <span class="circle"></span>
         </button>
         <button type="button" class="btn_pause">play</button>
         <!-- 진행바 -->
@@ -413,7 +415,7 @@
                     </article>
                 </div>
                 <div class="save bo">
-                    <h3>보험상품</h3>
+                    <h3 class="hide">보험상품</h3>
                     <article class="detail">
                         <a href="" class="block">
                             <h3 class="h4">보험</h3>
@@ -443,7 +445,7 @@
                     </article>
                 </div>
                 <div class="save lental">
-                    <h3>대여상품</h3>
+                    <h3 class="hide">대여상품</h3>
                     <article class="detail">
                         <a href="" class="block">
                             <h3 class="h4">대여</h3>
@@ -473,7 +475,7 @@
                     </article>
                 </div>
                 <div class="save bok">
-                    <h3>복지상품</h3>
+                    <h3 class="hide">복지상품</h3>
                     <article class="detail">
                         <a href="" class="block">
                             <h3 class="h4">복지</h3>
@@ -590,51 +592,53 @@
         </section>
     </main>
     <!-- 어사이드 -->
-    <aside>
-        <div class="login">
-            <h2>로그인</h2>
-            <span><button class="bold current-login">인증서</button><button>아이디</button></span>
-            <div class="in">
-                <p>인증서 로그인을 위해서는 <br>
-                    아이디와 비밀번호로 접속하신 후 <br>
-                    최초 1회 인증서 등록이 필요합니다.</p>
-                <ul class="in">
-                    <li><a href="">금융인증서</a></li>
-                    <li><a href="">공동인증서</a></li>
-                </ul>
-                <ul class="sns">
-                    <li><a href="">네이버</a></li>
-                    <li><a href="">토스</a></li>
-                    <li><a href="">카카오</a></li>
+     <div id="aside-wrap">
+        <aside>
+            <div class="login">
+                <h2>로그인</h2>
+                <span><button class="bold current-login">인증서</button><button>아이디</button></span>
+                <div class="in">
+                    <p>인증서 로그인을 위해서는 <br>
+                        아이디와 비밀번호로 접속하신 후 <br>
+                        최초 1회 인증서 등록이 필요합니다.</p>
+                    <ul class="in">
+                        <li><a href="">금융인증서</a></li>
+                        <li><a href="">공동인증서</a></li>
+                    </ul>
+                    <ul class="sns">
+                        <li><a href="">네이버</a></li>
+                        <li><a href="">토스</a></li>
+                        <li><a href="">카카오</a></li>
+                    </ul>
+                </div>
+                <div class="id">
+                    <form action="">
+                        <input type="text" placeholder="아이디">
+                        <input type="text" placeholder="비번">
+                        <input type="checkbox"><label for="">마우스 입력</label>
+                        <button>로그인</button>
+                        <button>아이디.비밀번호 찿기</button>
+                    </form>
+                </div>
+            </div>
+            <div class="fam">
+                <h2 class="hide">자주 사용하는 메뉴</h2>
+                <ul class="list flex">
+                    <li><a href="" class="block flex p">장기저축급여 <span class="block"></span>가입 </a></li>
+                    <li><a href="" class="block flex p">저축 <span class="block"></span> 급여목록</a></li>
+                    <li><a href="" class="block flex p">대여 상환내역 <span class="block"></span> 조회</a></li>
+                    <li class="hide"><a href="" class="block flex p">사고보험금 청구</a></li>
+                    <li class="hide"><a href="" class="block flex p">제증명서 발급</a></li>
+                    <li class="hide"><a href="" class="block flex p">회원카드 발급</a></li>
                 </ul>
             </div>
-            <div class="id">
-                <form action="">
-                    <input type="text" placeholder="아이디">
-                    <input type="text" placeholder="비번">
-                    <input type="checkbox"><label for="">마우스 입력</label>
-                    <button>로그인</button>
-                    <button>아이디.비밀번호 찿기</button>
-                </form>
+            <div class="app flex">
+                <h2 class="hide">한국교직원공제회 모바일 앱</h2>
+                <img src="img/main_icon_app_link.png" alt="한국교직원공제회 모바일 앱">
+                <p class="h4 bold">새로운 한국교직원공제회 <span class="block"></span> 모바일 앱을 사용해보세요!</p>
             </div>
-        </div>
-        <div class="fam">
-            <h2 class="hide">자주 사용하는 메뉴</h2>
-            <ul class="list flex">
-                <li><a href="" class="block flex p">장기저축급여 <span class="block"></span>가입 </a></li>
-                <li><a href="" class="block flex p">저축 <span class="block"></span> 급여목록</a></li>
-                <li><a href="" class="block flex p">대여 상환내역 <span class="block"></span> 조회</a></li>
-                <li class="hide"><a href="" class="block flex p">사고보험금 청구</a></li>
-                <li class="hide"><a href="" class="block flex p">제증명서 발급</a></li>
-                <li class="hide"><a href="" class="block flex p">회원카드 발급</a></li>
-            </ul>
-        </div>
-        <div class="app flex">
-            <h2 class="hide">한국교직원공제회 모바일 앱</h2>
-            <img src="img/main_icon_app_link.png" alt="한국교직원공제회 모바일 앱">
-            <p class="h4 bold">새로운 한국교직원공제회 <span class="block"></span> 모바일 앱을 사용해보세요!</p>
-        </div>
-    </aside>
+        </aside>
+    </div>
     <!-- 하단영역 -->
     <footer>
         <div class="wrap paddingT50 paddingB50">
