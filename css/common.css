@@ -1,5 +1,5 @@
 .wrap{
-  width: 1200px;
+  width: 1338px;
   margin: 0 auto;
 }
 .h1{
@@ -46,7 +46,7 @@
   display:flex;
 }
 .hide{
-  display: none;
+  display: none !important;
 }
 /*자세히보기 마우스오버 기능*/
 
@@ -98,7 +98,6 @@
   transition: width 0.35s ease-in-out;
   border: 1px solid;
 }
-
 
 
 
