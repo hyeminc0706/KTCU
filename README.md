@@ -1,4 +1,4 @@
-# 🏛️ Korea Teachers' Credit Union Clone Project
+# 🏛️ Korea Teachers' Credit Union
 A desktop-focused clone project built to study layout structure and UI interactions.  
 This project replicates the original site’s visual hierarchy and navigation flow using custom HTML/CSS and JavaScript.
 
@@ -47,9 +47,9 @@ Wireframe initial sketch showing layout structure and spacing logic.
 ---
 
 ## 🔗 Live Demo & Source  
-- Live Demo: [[link](https://hyeminc0706.github.io/Clone_Project/)]  
-- GitHub Repo: [[link](https://github.com/hyeminc0706/Clone_Project)]  
-- Case Study: [[link](https://little-gauge-2b1.notion.site/KTCU-Clone-Layout-Structure-Study-2d82c743869e80038e3ccc11730ebbab?pvs=73)]
+- Live Demo: [[link](https://hyeminc0706.github.io/KTCU/)]  
+- GitHub Repo: [[link](https://github.com/hyeminc0706/KTCU)]  
+- Case Study: [[link]([https://little-gauge-2b1.notion.site/KTCU-Clone-Layout-Structure-Study-2d82c743869e80038e3ccc11730ebbab?pvs=73](https://little-gauge-2b1.notion.site/KTCU-Clone-Case-Study-2d82c743869e80038e3ccc11730ebbab?source=copy_link))]
 
 ---
 
