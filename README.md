@@ -48,7 +48,6 @@ Wireframe initial sketch showing layout structure and spacing logic.
 
 ## 🔗 Live Demo & Source  
 - Live Demo: [[link](https://hyeminc0706.github.io/KTCU/)]  
-- GitHub Repo: [[link](https://github.com/hyeminc0706/KTCU)]  
 - Case Study: [[link](https://little-gauge-2b1.notion.site/KTCU-Clone-Case-Study-2d82c743869e80038e3ccc11730ebbab)]
 
 ---
