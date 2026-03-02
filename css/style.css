@@ -755,7 +755,7 @@ section#news {
 section#news div {
   max-width: 990px;
   padding: 80px 0 48px 0;
-  margin-left: 192px;
+  margin-left: 4vw;
 } 
 section#news div h2 {
   word-spacing: 7px;
@@ -862,7 +862,7 @@ section#rolling  p{
 /* 로그인 */
 aside{
   width: 295px;
-  left: 1215px;
+  left: 76vw;
   position: fixed;
   top: 210px;
 }
